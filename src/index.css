@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+  
+  }
+  
+  .sidebar-brand-text-bs-primary {
+    color: #203562;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 33.6px;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .sidebar-brand {
+    text-decoration: none;
+  }
+  
+  .text-light {
+    color: #fff !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 33.6px;
+    position: relative;
+    padding: 0px 90px;
+    left: -70px;
+    top: 15px;
+  }
+  
+  .text-bg-light {
+    background-color: #F5F5F5;
+    width: 354px;
+height: 1024px;
+flex-shrink: 0;
+  }
+  
+  .icon::before {
+    position: relative;
+    top: 5px;
+    left: -15px;
+    content: url(assets/description.svg) !important;
+  }
+  
+  .nav-item {
+    position: relative;
+    top: 10px;
+    right: -19px;
+    display: flex;
+    width: 270px;
+    height: 60px;
+    padding: 0px 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0px;
+    border-radius: 8px;
+    background: var(--accent, #203562);
+    position: relative;
+  }
+  
+  .bg-light {
+    position: absolute;
+    top: 50px;
+    left: 395px;
+    width: 1038px;
+    height: 366px !important;
+    flex-shrink: 0;
+    border-radius: 16px;
+    opacity: 0.8;
+    background: var(--Secondary, #F5F5F5) !important;
+
+    box-shadow: 2px 4px 16px 0px rgba(32, 53, 98, 0.47);
+  }
+  
+  ul.navbar-nav {
+    background: var(--Primary, #E3E8F8) !important;
+  }
+  
+  .container-fluid {
+    position: relative;
+    top: -260px;
+    left: 200px;
+  }
+  
+  .form-control {
+    border: #F5F5F5 !important;
+    position: relative;
+    height: 100px;
+    top:-10px;
+    left: 30px;
+    height: 60px;
+    background: var(--Secondary, #F5F5F5);
+    border:none !important;
+    width: 900px !important;
+  }
+  
+  .mr-auto h2 {
+    color: var(--accent, #203562);
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44.8px;
+    padding: 46px 45px;
+  }
+  .mb-3{
+    position: relative;
+    height:60px;
+    left: 15px;
+    border:none !important;
+  }
+  #title::placeholder {
+    color: var(--accent, #203562);
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44.8px;
+    opacity: 0.8;
+    position: relative;
+    top:-0px;
+   
+  }
+  
+  #note::placeholder {
+    color: var(--accent, #203562);
+    opacity: 0.7;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 33.6px;
+    position: relative;
+    top:20px;
+    height: 10px !important;
+    border:none !important;
+  }
+  
+  button {
+    position: relative;
+    left: 50px;
+    top:30px;
+    padding:13px 25px;
+    border-radius: 12px;
+   
+  }
+  .btn{
+    background-color:#175bf0!important;
+    border:none;
+    color:#fff;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif !important;
+  }
+  
+  .card {
+    width: 330px;
+    height: 263px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: var(--Secondary, #F5F5F5);
+    position: relative;
+    top: 10px;
+  }
+  
+  .mb-4 h4 {
+    position: relative;
+    top: -10px;
+    left: 15px;
+    color: var(--accent, #203562);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 33.6px;
+  }
+  
+  h4.mb-0::before {
+    content: url(assets/description1.svg);
+    color: #203562 !important;
+    position: relative;
+    left: -20px;
+    top: 7px;
+  }
+  
+  .mb-4 h6 {
+    color: var(--accent, #203562);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22.4px;
+    opacity: 0.7;
+  }
+  
+  .mx::before {
+    content: url(assets/edit.svg);
+    position: relative;
+    left: 220px;
+  }
+  
+  .mx-1::before {
+    content: url(assets/delete.svg);
+    position: relative;
+    top: -30px;
+    left: 260px;
+  }
+  .each-note {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: space-between;
+  }
+  
+ 
+.rec-view-card {
+        margin-right: 10px;
+        margin-bottom: 10px; /* Adds space at the bottom of each card */
+      }
+.tile{
+    position: relative;
+    top:20px;
+    left:40px;
+    color: var(--accent, #1e325f) !important;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 33.6px; /* 140% */
+}   
+.h5{
+    width: 261px;
+    height: 136px;
+    flex-shrink: 0;
+    color: var(--Font, #303030);
+
+/* b1 */
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 22.4px; /* 140% */
+position: relative;
+width:280px;
+left:30px;
+
+
+}
+.my-3{
+    color: #000;
+
+    /* b1 */
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22.4px; /* 140% */
+    position: relative;
+
+left:30px;
+} 
+  
+  
