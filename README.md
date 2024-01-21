@@ -1,4 +1,4 @@
-# React + Vite
+notes app craeted by react js with redux state management # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
