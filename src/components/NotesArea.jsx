@@ -12,7 +12,7 @@ function NotesArea() {
   };
 
   return (
-    <div className="bg-light mx-4 mt-5 mb-5 static-top py-5 px-3" style={{ height: "fit-content" }}>
+    <div className="bg-light mt-5 mb-5 static-top py-5 px-3" style={{ minHeight: "fit-content" }}>
       <div className="row">
         <Formik
           initialValues={{
@@ -21,7 +21,7 @@ function NotesArea() {
           }}
           onSubmit={handleSubmit}
         >
-          <Form className="mr-auto ml-md-0 md-100 navbar-search">
+          <Form className="mr-auto ml-md-0 w-100 navbar-search">
             <h2>Add a Note</h2>
             <div className="mb-3">
               <label htmlFor="title" className="form-label"></label>
@@ -29,7 +29,7 @@ function NotesArea() {
                 type="text"
                 className="form-control"
                 name="title"
-                id="title"
+                id="exampleFormControlInput1"
                 placeholder="Title"
               />
             </div>
@@ -39,10 +39,10 @@ function NotesArea() {
                 as="textarea"
                 className="form-control"
                 name="note"
-                id="note"
+                id="exampleFormControlTextarea1"
                 rows="3"
-                placeholder="Take a note"
-                />
+                placeholder="Enter note"
+              />
             </div>
             <Button type="submit" className="btn">Submit</Button>
           </Form>

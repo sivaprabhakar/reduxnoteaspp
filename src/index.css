@@ -1,267 +1,724 @@
-* {
-    margin: 0;
-    padding: 0;
+*{
+  margin:0;
+  padding:0;
   
-  }
+}
+
+
+/* Mobile (576px and below) */
+@media (max-width: 576px) {
+  /* Apply your mobile styles here */
+  /* For example: */
   
   .sidebar-brand-text-bs-primary {
-    color: #203562;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 33.6px;
-    text-align: center;
-    padding: 40px 20px;
+      color: #203562;
+      font-family: 'Montserrat', sans-serif ;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 20.6px; /* 84% */
+      text-align: center;
+      padding:12px 2px;
+  
+  
+  }
+  .sidebar-brand{
+      text-decoration: none ;
+  }
+  .text-light{
+      color:  #fff !important;
+      font-family: 'Montserrat', sans-serif ;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 33.6px; /* 140% */
+      position: relative;
+      padding:0px 90px;
+      left:-70px;
+      top:-5px;
+      }
+  .text-bg-light {
+          width: 264px;
+          height: 1024px;
+          flex-shrink: 0;
+      }
+  .icon::before{
+          position: relative;
+           height:10px;
+          top:45px;
+          left:-30px;
+          content:url(assets/description.svg)!important;
+          background-size: 20px 20px !important;
+        
+      }
+  .nav-item{
+          position: relative;
+          top:10px;
+          right:-10px;
+          display: flex;
+      width: 110px;
+      height:45px;
+      padding: 0px 12px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 0px;
+      border-radius: 8px;
+      background: var(--accent, #203562);
+     
+      }
+  .bg-light{
+      position: absolute;
+      top:-30px;
+      left:190px;
+      width:700px;
+      height: 275px;
+      flex-shrink: 0;
+      border-radius: 16px;
+      opacity: 0.8;
+      background: var(--Secondary, #F5F5F5);
+      box-shadow: 2px 4px 16px 0px rgba(32, 53, 98, 0.47);
+      }
+  ul.navbar-nav{
+          background: var(--Primary, #E3E8F8)!important;
+          width:1005px;
+      } 
+  .text-bg-light {
+          width: 154px;
+          height: 1024px;
+          flex-shrink: 0;
+      }
+  .container-fluid{
+          position: relative;
+          top:-260px;
+          left:220px;
+      }
+     
+  .mr-auto h2{
+          color: var(--accent, #203562);
+      
+      /* H1 */
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 44.8px; /* 140% */
+      padding:1px 15px;
+      position: relative;
+      top:-35px;
+      left:-10px;
+      }
+  #exampleFormControlInput1::placeholder{
+          color: var(--accent, #203562);
+      font-family: Montserrat;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 44.8px; /* 140% */
+      opacity: 0.8;
+      
+      }
+  #exampleFormControlTextarea1::placeholder{
+          color: var(--accent, #203562);
+          opacity: 0.7;
+      
+      font-family: Montserrat;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 33.6px; /* 140% */
+      }
+  button{
+          position: relative;
+          left:10px;
+          top:-75px;
+          width:80px;
+          height:40px;
+      }
+  .form-control{
+          border: #F5F5F5 !important;
+          position: relative;
+          left:1px;
+          top:-70px;
+          width:640px!important;
+      }
+  .card{
+          width: 317px;
+      height: 263px;
+      flex-shrink: 0;
+      border-radius: 16px;
+      background: var(--Secondary, #F5F5F5);
+      position: relative;
+      top:-180px;
+      left:-270px;
+      }
+  .mb-4 h4{
+          position: relative;
+          top:-200px;
+          left:-260px;
+          color: var(--accent, #203562);
+      font-family: Montserrat;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 33.6px; /* 140% */
+      }
+  h4.mb-0::before{
+          content:url(assets/description1.svg);
+          color:#203562 !important;
+          position: relative;
+          left:-12px;
+          top:7px;
+      }
+  .mb-4 h6{
+          color: var(--accent, #203562);
+          font-family: Montserrat;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 22.4px; /* 140% */
+          opacity: 0.7;
+          position: relative;
+          top:-190px;
+          left:-265px;
+      }
+  .mx::before{
+          content: url(assets/edit.svg);
+          position: relative;
+          left:-40px;
+      }
+  .mx-1::before{
+          content:url(assets/delete.svg);
+          position: relative;
+          top:-30px;
+          left:-10px;
+      }
+}
+
+/* Tablet (768px and above) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .sidebar-brand-text-bs-primary{
+      color: #203562;
+      font-family: 'Montserrat', sans-serif ;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33.6px; /* 84% */
+  text-align: center;
+  padding:30px 35px;
+  
+  
+  }
+  .sidebar-brand{
+      text-decoration: none ;
+  }
+  .text-light{
+  color:  #fff !important;
+  font-family: 'Montserrat', sans-serif ;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 33.6px; /* 140% */
+  position: relative;
+ 
+  left:10px;
+  top:-4px;
   }
   
-  .sidebar-brand {
-    text-decoration: none;
-  }
-  
-  .text-light {
-    color: #fff !important;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 33.6px;
-    position: relative;
-    padding: 0px 90px;
-    left: -70px;
-    top: 15px;
-  }
   
   .text-bg-light {
-    background-color: #F5F5F5;
-    width: 354px;
-height: 1024px;
-flex-shrink: 0;
+      width: 300px;
+      height: 1024px;
+      flex-shrink: 0;
   }
+  .icon::before{
+      position: relative;
+      top:7px;
+      left:-12px;
+      content:url(assets/description.svg)!important;
+  }
+  .nav-item{
+      position: relative;
+      top:10px;
+      right:-49px;
+      display: flex;
+  width: 163px;
+  height:60px;
+  padding: 0px 12px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0px;
+  border-radius: 8px;
+  background: var(--accent, #203562);
+  position: relative;
+  } 
+  .bg-light{
+      position: absolute;
+     top:0px;
+     left:355px;
+     width: 708px;
+     height: 356px;
+     flex-shrink: 0;
+     border-radius: 16px;
+     opacity: 0.8;
+     background: var(--Secondary, #F5F5F5);
+     box-shadow: 2px 4px 16px 0px rgba(32, 53, 98, 0.47);
+  }
+  ul.navbar-nav{
+      background: var(--Primary, #E3E8F8)!important;
+      width:1165px;
+  } 
+  .container-fluid{
+      position: relative;
+      top:-280px;
+      left:170px;
+  }
+  .form-control{
+  border: #F5F5F5 !important;
+  position: relative;
+  left:30px;
   
-  .icon::before {
-    position: relative;
-    top: 5px;
-    left: -15px;
-    content: url(assets/description.svg) !important;
+  width:550px !important;
   }
+  .mr-auto h2{
+      color: var(--accent, #203562);
   
-  .nav-item {
-    position: relative;
-    top: 10px;
-    right: -19px;
-    display: flex;
-    width: 270px;
-    height: 60px;
-    padding: 0px 12px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 0px;
-    border-radius: 8px;
-    background: var(--accent, #203562);
-    position: relative;
+  /* H1 */
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44.8px; /* 140% */
+  padding:1px 35px;
   }
+  #exampleFormControlInput1::placeholder{
+      color: var(--accent, #203562);
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44.8px; /* 140% */
+  opacity: 0.8;
   
-  .bg-light {
-    position: absolute;
-    top: 50px;
-    left: 395px;
-    width: 1038px;
-    height: 366px !important;
-    flex-shrink: 0;
-    border-radius: 16px;
-    opacity: 0.8;
-    background: var(--Secondary, #F5F5F5) !important;
-
-    box-shadow: 2px 4px 16px 0px rgba(32, 53, 98, 0.47);
   }
-  
-  ul.navbar-nav {
-    background: var(--Primary, #E3E8F8) !important;
+  #exampleFormControlTextarea1::placeholder{
+      color: var(--accent, #203562);
+      opacity: 0.7;
+  /* H2 */
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 33.6px; /* 140% */
   }
-  
-  .container-fluid {
-    position: relative;
-    top: -260px;
-    left: 200px;
+  button{
+      position: relative;
+      left:35px;
   }
-  
-  .form-control {
-    border: #F5F5F5 !important;
-    position: relative;
-    height: 100px;
-    top:-10px;
-    left: 30px;
-    height: 60px;
-    background: var(--Secondary, #F5F5F5);
-    border:none !important;
-    width: 900px !important;
+  .card{
+      width: 317px;
+  height: 263px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: var(--Secondary, #F5F5F5);
+  position: relative;
+  top:10px;
   }
-  
-  .mr-auto h2 {
-    color: var(--accent, #203562);
-    font-family: Montserrat;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 44.8px;
-    padding: 46px 45px;
+  .mb-4 h4{
+      position: relative;
+      top:-10px;
+      left:15px;
+      color: var(--accent, #203562);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33.6px; /* 140% */
   }
-  .mb-3{
-    position: relative;
-    height:60px;
-    left: 15px;
-    border:none !important;
+  h4.mb-0::before{
+      content:url(assets/description1.svg);
+      color:#203562 !important;
+      position: relative;
+      left:-20px;
+      top:7px;
   }
-  #title::placeholder {
-    color: var(--accent, #203562);
-    font-family: 'Montserrat', sans-serif !important;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 44.8px;
-    opacity: 0.8;
-    position: relative;
-    top:-0px;
-   
+  .mb-4 h6{ 
+      color: var(--accent, #203562);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22.4px; /* 140% */
+  opacity: 0.7;
   }
-  
-  #note::placeholder {
-    color: var(--accent, #203562);
-    opacity: 0.7;
-    font-family: Montserrat;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 33.6px;
-    position: relative;
-    top:20px;
-    height: 10px !important;
-    border:none !important;
+  .mx::before{
+  content: url(assets/edit.svg);
+  position: relative;
+  left:-40px;
   }
-  
-  button {
-    position: relative;
-    left: 50px;
-    top:30px;
-    padding:13px 25px;
-    border-radius: 12px;
-   
+  .mx-1::before{
+      content:url(assets/delete.svg);
+      position: relative;
+      top:-30px;
+      left:-10px;
   }
-  .btn{
-    background-color:#175bf0!important;
-    border:none;
-    color:#fff;
-    font-size: 18px;
-    font-family: 'Montserrat', sans-serif !important;
+  .edittext{
+      border: none;
+      height:160px;
+      width:280px;
   }
-  
-  .card {
-    width: 330px;
-    height: 263px;
-    flex-shrink: 0;
-    border-radius: 16px;
-    background: var(--Secondary, #F5F5F5);
-    position: relative;
-    top: 10px;
-  }
-  
-  .mb-4 h4 {
-    position: relative;
-    top: -10px;
-    left: 15px;
-    color: var(--accent, #203562);
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 33.6px;
-  }
-  
-  h4.mb-0::before {
-    content: url(assets/description1.svg);
-    color: #203562 !important;
-    position: relative;
-    left: -20px;
-    top: 7px;
-  }
-  
-  .mb-4 h6 {
-    color: var(--accent, #203562);
-    font-family: Montserrat;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 22.4px;
-    opacity: 0.7;
-  }
-  
-  .mx::before {
-    content: url(assets/edit.svg);
-    position: relative;
-    left: 220px;
-  }
-  
-  .mx-1::before {
-    content: url(assets/delete.svg);
-    position: relative;
-    top: -30px;
-    left: 260px;
-  }
-  .each-note {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    justify-content: space-between;
-  }
-  
- 
-.rec-view-card {
-        margin-right: 10px;
-        margin-bottom: 10px; /* Adds space at the bottom of each card */
-      }
-.tile{
-    position: relative;
-    top:20px;
-    left:40px;
-    color: var(--accent, #1e325f) !important;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 33.6px; /* 140% */
-}   
-.h5{
-    width: 261px;
-    height: 136px;
-    flex-shrink: 0;
-    color: var(--Font, #303030);
-
-/* b1 */
-font-family: Montserrat;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: 22.4px; /* 140% */
-position: relative;
-width:280px;
-left:30px;
-
-
 }
-.my-3{
-    color: #000;
 
-    /* b1 */
-    font-family: Montserrat;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 22.4px; /* 140% */
-    position: relative;
-
-left:30px;
-} 
+/* Small Desktop (992px and above) */
+@media  (max-width: 992px){
+  .sidebar-brand-text-bs-primary{
+      color: #203562;
+      font-family: 'Montserrat', sans-serif ;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33.6px; /* 84% */
+  text-align: center;
+  padding:20px 15px;
   
   
+  }
+  .sidebar-brand{
+      text-decoration: none ;
+  }
+  .text-light{
+  color:  #fff !important;
+  font-family: 'Montserrat', sans-serif ;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 33.6px; /* 140% */
+  position: relative;
+ 
+  left:10px;
+  top:-4px;
+  }
+  
+  
+  .text-bg-light {
+      width: 250px;
+      height: 1024px;
+      flex-shrink: 0;
+  }
+  .icon::before{
+      position: relative;
+      top:7px;
+      left:-12px;
+      content:url(assets/description.svg)!important;
+  }
+  .nav-item{
+      position: relative;
+      top:10px;
+      right:-29px;
+      display: flex;
+  width: 163px;
+  height:60px;
+  padding: 0px 12px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0px;
+  border-radius: 8px;
+  background: var(--accent, #203562);
+  position: relative;
+  } 
+  .bg-light{
+      position: absolute;
+     top:0px;
+     left:285px;
+     width: 470px;
+     height: 356px;
+     flex-shrink: 0;
+     border-radius: 16px;
+     opacity: 0.8;
+     background: var(--Secondary, #F5F5F5);
+     box-shadow: 2px 4px 16px 0px rgba(32, 53, 98, 0.47);
+  }
+  ul.navbar-nav{
+      background: var(--Primary, #E3E8F8)!important;
+      width:1165px;
+  } 
+  .container-fluid{
+      position: relative;
+      top:-280px;
+      left:130px;
+  }
+  .form-control{
+  border: #F5F5F5 !important;
+  position: relative;
+  left:10px;
+  
+  width:380px !important;
+  }
+  .mr-auto h2{
+      color: var(--accent, #203562);
+  
+  /* H1 */
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44.8px; /* 140% */
+  padding:1px 35px;
+  }
+  #exampleFormControlInput1::placeholder{
+      color: var(--accent, #203562);
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44.8px; /* 140% */
+  opacity: 0.8;
+  
+  }
+  #exampleFormControlTextarea1::placeholder{
+      color: var(--accent, #203562);
+      opacity: 0.7;
+  /* H2 */
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 33.6px; /* 140% */
+  }
+  button{
+      position: relative;
+      left:35px;
+  }
+  .card{
+      width: 317px;
+  height: 263px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: var(--Secondary, #F5F5F5);
+  position: relative;
+  top:10px;
+  }
+  .mb-4 h4{
+      position: relative;
+      top:-10px;
+      left:15px;
+      color: var(--accent, #203562);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33.6px; /* 140% */
+  }
+  h4.mb-0::before{
+      content:url(assets/description1.svg);
+      color:#203562 !important;
+      position: relative;
+      left:-20px;
+      top:7px;
+  }
+  .mb-4 h6{ 
+      color: var(--accent, #203562);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22.4px; /* 140% */
+  opacity: 0.7;
+  }
+  .mx::before{
+  content: url(assets/edit.svg);
+  position: relative;
+  left:-40px;
+  }
+  .mx-1::before{
+      content:url(assets/delete.svg);
+      position: relative;
+      top:-30px;
+      left:-10px;
+  }
+  .edittext{
+      border: none;
+      height:160px;
+      width:280px;
+  }
+}
+
+
+
+@media (min-width: 1200px) {
+  /* Apply your extra large desktop styles here */
+  .sidebar-brand-text-bs-primary{
+      color: #203562;
+      font-family: 'Montserrat', sans-serif ;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33.6px; /* 84% */
+  text-align: center;
+  padding:40px 20px;
+  
+  
+  }
+  .sidebar-brand{
+      text-decoration: none ;
+  }
+  .text-light{
+  color:  #fff !important;
+  font-family: 'Montserrat', sans-serif ;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 33.6px; /* 140% */
+  position: relative;
+  padding:0px 90px;
+  left:-45px;
+  top:15px;
+  }
+  
+  
+  .text-bg-light {
+      width: 354px;
+      height: 1024px;
+      flex-shrink: 0;
+  }
+  .icon::before{
+      position: relative;
+      top:5px;
+      left:-20px;
+      content:url(assets/description.svg)!important;
+  }
+  .nav-item{
+      position: relative;
+      top:10px;
+      right:-19px;
+      display: flex;
+  width: 250px;
+  height:60px;
+  padding: 0px 12px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0px;
+  border-radius: 8px;
+  background: var(--accent, #203562);
+  position: relative;
+  } 
+  .bg-light{
+      position: absolute;
+  top:0px;
+  left:395px;
+      width: 1038px;
+  height: 366px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  opacity: 0.8;
+  background: var(--Secondary, #F5F5F5);
+  box-shadow: 2px 4px 16px 0px rgba(32, 53, 98, 0.47);
+  }
+  ul.navbar-nav{
+      background: var(--Primary, #E3E8F8)!important;
+      width:1800px;
+  } 
+  .container-fluid{
+      position: relative;
+      top:-260px;
+      left:200px;
+  }
+  .form-control{
+  border: #F5F5F5 !important;
+  position: relative;
+  left:30px;
+  
+  width:900px !important;
+  }
+  .mr-auto h2{
+      color: var(--accent, #203562);
+  
+  /* H1 */
+  font-family: Montserrat;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 44.8px; /* 140% */
+  padding:1px 35px;
+  }
+  #exampleFormControlInput1::placeholder{
+      color: var(--accent, #203562);
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44.8px; /* 140% */
+  opacity: 0.8;
+  
+  }
+  #exampleFormControlTextarea1::placeholder{
+      color: var(--accent, #203562);
+      opacity: 0.7;
+  /* H2 */
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 33.6px; /* 140% */
+  }
+  button{
+      position: relative;
+      left:35px;
+  }
+  .card{
+      width: 317px;
+  height: 363px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: var(--Secondary, #F5F5F5);
+  position: relative;
+  top:10px;
+  }
+  .mb-4 h4{
+      position: relative;
+      top:-10px;
+      left:15px;
+      color: var(--accent, #203562);
+  font-family: Montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33.6px; /* 140% */
+  }
+  h4.mb-0::before{
+      content:url(assets/description1.svg);
+      color:#203562 !important;
+      position: relative;
+      left:-20px;
+      top:7px;
+  }
+  .mb-4 h6{ 
+      color: var(--accent, #203562);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22.4px; /* 140% */
+  opacity: 0.7;
+  }
+  .mx::before{
+  content: url(assets/edit.svg);
+  position: relative;
+  left:-40px;
+  }
+  .mx-1::before{
+      content:url(assets/delete.svg);
+      position: relative;
+      top:-30px;
+      left:-10px;
+  }
+  .edittext{
+      border: none;
+      height:160px;
+      width:280px;
+  }
+  
+}

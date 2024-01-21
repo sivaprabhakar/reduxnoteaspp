@@ -1,3 +1,4 @@
+
 import { createSlice } from '@reduxjs/toolkit';
 
 const notesSlice = createSlice({
@@ -12,9 +13,17 @@ const notesSlice = createSlice({
   reducers: {
     addNote: (state, action) => {
       state.push(action.payload);
-    }
-  }
+    },
+    editNote: (state, action) => {
+      const { index, updatedNote } = action.payload;
+      state[index] = updatedNote;
+    },
+    deleteNote: (state, action) => {
+      const index = action.payload;
+      state.splice(index, 1);
+    },
+  },
 });
 
-export const { addNote } = notesSlice.actions;
+export const { addNote, editNote, deleteNote } = notesSlice.actions;
 export default notesSlice.reducer;
